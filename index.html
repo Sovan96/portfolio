@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen bg-zinc-800 ">
+    
+        <header class="bg-white shadow">
+            <div class="container mx-auto  px-4 py-4 flex justify-between items-center">
+                <h1 class="text-2xl text-green-900 font-bold">Sovan <span class="text-2xl text-green-500 font-bold">Pradhan</span></h1>
+                
+                    <ul class="flex space-x-5">
+                        <li><a href="#home" class="hover:text-blue-500 shadow-lg shadow-indigo-500/50">Home</a></li>
+                        <li><a href="#about" class="hover:text-blue-500 shadow-lg shadow-indigo-500/50">About</a></li>
+                        <li><a href="#projects" class="hover:text-blue-500 shadow-lg shadow-indigo-500/50">Projects</a></li>
+                        <li><a href="#contact" class="hover:text-blue-500 shadow-lg shadow-indigo-500/50">Contact</a></li>
+                    </ul>
+               
+            </div>
+        </header>
+
+        
+
+        <section class="bg-blue-100 text-white text-center py-20">
+            <h2 class="text-4xl text-rose-900 font-bold">Welcome <span class="text-green-700">to</span> <span class="text-green-900"> My Portfolio</span> </h2>
+            <p class="text-lg text-green-600 mt-4 hover:text-green-700">I'm a Web Developer passionate about building amazing websites.</p>
+        </section>
+
+
+        <section id="about" class="py-20 bg-green-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8">About <span class="text-lime-600">Me</span> </h2>
+                <div class="flex flex-col  items-center">
+                    <img src="image/Sovan.jpg" alt="Profile Picture" class="w-48 h-48 rounded-full mb-4 md:mb-0 md:mr-8">
+                    <h1 class="text-3xl text-semibold text-green-900">I am Sovan <span class="text-green-500">Pradhan</span></h1>
+                    <h2 class="text-xl text-rose-600">Mern Stack Developer</h2>
+                    <p class="text-lg text-blue-500">
+                        Hello! I'm a web developer with a passion for creating beautiful, functional websites. I have experience with modern web technologies like HTML, CSS, JavaScript, and Tailwind CSS.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+
+    
+        <section id="projects" class="py-20 bg-green-100">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold text-center mb-8"><span class="text-lime-700">My</span> <span class="text-violet-400">Projects</span></h2>
+                <div class="grid gap-8">
+                    <div class="bg-white shadow-md rounded-lg object-cover overflow-hidden">
+                        <img src="https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2022/12/resturant_website.jpg" alt="Project 2" class="w-full object-cover">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-indigo-800">Project One</h3>
+                            <p class="mt-2">This is a brief description of the project. It was built using HTML, CSS, and JavaScript.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240304152340/tic-tac-toe.png" alt="Project 2" class="w-full">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-violet-800">Project Two</h3>
+                            <p class="mt-2">This project was built using a modern JavaScript framework and features a responsive design.</p>
+                        </div>
+                    </div>
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*y3YGTrrOxU838Ly_gnP1nw.jpeg" alt="Project 3" class="w-full">
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-blue-600">Project Three</h3>
+                            <p class="mt-2">An innovative web application designed to solve real-world problems, built using advanced web technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+      
+        <section id="contact" class="py-20 bg-yellow-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center"><span class="text-lime-600">Contact</span> <span class="text-blue-500">Me</span></h2>
+                <form id="contactForm" class="mt-8 max-w-lg mx-auto">
+                    <!-- Name Field -->
+                    <div class="mb-4">
+                        <label for="name" class="block text-lg font-semibold text-gray-700">Your Name</label>
+                        <input type="text" id="name" class="mt-1 border-2 border-blue-500 hover:border-cyan-700 outline-none block px-2 py-2 w-full border-gray-300 rounded-md shadow-sm" placeholder="Enter Your Name">
+                        <p id="nameError" class="mt-1 text-sm text-red-600 hidden">Name is required.</p>
+                    </div>
+                    
+                    <!-- Email Field -->
+                    <div class="mb-4">
+                        <label for="email" class="block text-lg  font-semibold text-gray-700 ">Your Email</label>
+                        <input type="email" id="email" class="mt-1 px-2 py-2  border-2 border-cyan-900 border-blue-500 hover:border-cyan-700 outline-none block w-full border-gray-300 rounded-md shadow-sm" placeholder="Enter Your Email">
+                        <p id="emailError" class="mt-1 text-sm text-red-600 hidden">Please enter a valid email address.</p>
+                    </div>
+    
+                    <!-- Message Field -->
+                    <div class="mb-4">
+                        <label for="message" class="block text-lg font-semibold  text-gray-700">Your Message</label>
+                        <textarea id="message" class="mt-1 rows-'4' px-2 py-2 border-2 border-cyan-900 border-blue-500 hover:border-cyan-700 outline-none block w-full border-gray-300 rounded-md shadow-sm" rows="4" placeholder="Your message here..."></textarea>
+                        <p id="messageError" class="mt-1 text-sm text-red-600 hidden">Message is required.</p>
+                    </div>
+    
+                    <!-- Submit Button -->
+                    <div class="text-center">
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-500">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+
+            <footer class="bg-gray-900 text-white py-4">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <p>&copy; 2024 Created by Sovan Pradhan.</p>
+                </div>
+            </footer>
+        
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>
